@@ -13,6 +13,7 @@ var env = process.env;
  
 app.get('/', function (req, res) {
   console.log('Get a new request ' + (new Date()).toISOString());
+  res.set('Content-Type', 'application/json');
   res.send(JSON.stringify(env));
 })
 
