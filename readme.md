@@ -1,3 +1,10 @@
+Prerequisite
+
+* Register a pivotal account with Cognizant email
+* Download and install CF CLI `https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry/install-the-cf-cli`
+
+
+Init a node application
 ```
 npm init -y
 npm install express
@@ -81,6 +88,7 @@ app.listen(process.env.PORT || 3000)
 Deleting the application
 ```
 cf delete alex-nodejs
+cf delete-service alex-db
 ```
 
 
